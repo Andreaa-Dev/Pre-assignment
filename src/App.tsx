@@ -4,6 +4,7 @@ import axios from "axios";
 import HomePage from "./HomePage";
 import { Switch, Route } from "react-router-dom";
 import DetailsInformation from "./DetailsInformation";
+import NavBar from "./NavBar";
 
 export type UserInformation = {
   name: string;
@@ -27,14 +28,17 @@ function App() {
   }, []);
 
   return (
-    <Switch>
-      <Route exact path="/">
-        <HomePage userInformation={userInformation} />;
-      </Route>
-      <Route exact path="/:userID">
-        <DetailsInformation />
-      </Route>
-    </Switch>
+    <div>
+      <NavBar />
+      <Switch>
+        <Route exact path="/">
+          <HomePage userInformation={userInformation} />;
+        </Route>
+        <Route exact path="/:userID">
+          <DetailsInformation />
+        </Route>
+      </Switch>
+    </div>
   );
 }
 
