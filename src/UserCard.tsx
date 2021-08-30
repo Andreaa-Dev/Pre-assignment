@@ -5,7 +5,6 @@ import Button from "./Button";
 const Card = styled.div`
   border: black 1px solid;
   border-radius: 10px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
