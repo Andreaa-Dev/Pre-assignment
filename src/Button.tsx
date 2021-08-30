@@ -6,7 +6,7 @@ const ButtonStyle = styled.button`
   border-radius: 0.7rem;
   background-color: #8cb5f4;
   border: 1px solid #8cb5f4;
-  padding: 0.5rem;
+  padding: 0.7rem;
 `;
 type ButtonProps = {
   id: number;
